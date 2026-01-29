@@ -1,0 +1,176 @@
+2026-01-29 16:43:53 ERROR Finder:33 -  Задано недопустимое значение nam аргумента t
+java.lang.IllegalArgumentException:  Задано недопустимое значение nam аргумента t
+	at org.example.finder.ArgsName.get(ArgsName.java:15)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 16:44:02 ERROR Finder:33 -  Задано недопустимое значение nam аргумента t
+java.lang.IllegalArgumentException:  Задано недопустимое значение nam аргумента t
+	at org.example.finder.ArgsName.get(ArgsName.java:15)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:01:55 INFO  Finder:25 - d d:\test,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:01:55 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:17:58 ERROR Finder:34 - Аргументы не были переданы в программу
+java.lang.IllegalArgumentException: Аргументы не были переданы в программу
+	at org.example.finder.ArgsName.parse(ArgsName.java:41)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:18:35 ERROR Finder:34 - Error: Данный аргумент '.txt' не начинается с '-' символа
+java.lang.IllegalArgumentException: Error: Данный аргумент '.txt' не начинается с '-' символа
+	at org.example.finder.ArgsName.validate(ArgsName.java:22)
+	at org.example.finder.ArgsName.parse(ArgsName.java:44)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:19:03 INFO  Finder:25 - d d:\test,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:19:03 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:19:34 ERROR Finder:34 - Error: Данный аргумент '.txt' не начинается с '-' символа
+java.lang.IllegalArgumentException: Error: Данный аргумент '.txt' не начинается с '-' символа
+	at org.example.finder.ArgsName.validate(ArgsName.java:22)
+	at org.example.finder.ArgsName.parse(ArgsName.java:44)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:20:19 INFO  Finder:25 - d d:\test,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:20:19 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:20:49 ERROR Finder:34 - Error: Данный аргумент 't=name' не начинается с '-' символа
+java.lang.IllegalArgumentException: Error: Данный аргумент 't=name' не начинается с '-' символа
+	at org.example.finder.ArgsName.validate(ArgsName.java:22)
+	at org.example.finder.ArgsName.parse(ArgsName.java:44)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:20:57 INFO  Finder:25 - d d:\test,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:20:57 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:21:03 ERROR Finder:34 - Error: Данный аргумент '-ntest.txt' не содержит знак равенства
+java.lang.IllegalArgumentException: Error: Данный аргумент '-ntest.txt' не содержит знак равенства
+	at org.example.finder.ArgsName.validate(ArgsName.java:24)
+	at org.example.finder.ArgsName.parse(ArgsName.java:44)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:21:16 INFO  Finder:25 - d d:\test11111,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:21:16 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:31:24 INFO  Finder:25 - d d:\test11111,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:31:24 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:32:28 INFO  Finder:25 - d d:\test11111,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:32:28 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:35:42 INFO  Finder:25 - d d:\test,n test.33txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:35:42 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:36:15 ERROR Finder:34 - Файл: 'd:\test34' не найден
+java.lang.IllegalArgumentException: Файл: 'd:\test34' не найден
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:25)
+2026-01-29 18:36:53 ERROR Finder:34 - Error: Данный аргумент '-ntest.txt' не содержит знак равенства
+java.lang.IllegalArgumentException: Error: Данный аргумент '-ntest.txt' не содержит знак равенства
+	at org.example.finder.ArgsName.validate(ArgsName.java:24)
+	at org.example.finder.ArgsName.parse(ArgsName.java:44)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:37:21 INFO  Finder:25 - d d:\test,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:37:21 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:37:46 INFO  Finder:25 - d d:\tes2345t,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 18:37:46 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 18:39:17 ERROR Finder:34 - Файл: 'd:\test34' не найден
+java.lang.IllegalArgumentException: Файл: 'd:\test34' не найден
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:25)
+2026-01-29 18:48:04 ERROR Finder:34 - Файл: 'd:\test34' не найден
+java.lang.IllegalArgumentException: Файл: 'd:\test34' не найден
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:25)
+2026-01-29 18:48:47 ERROR Finder:34 - Директория поиска: 'd:\test34' не найдена
+java.lang.IllegalArgumentException: Директория поиска: 'd:\test34' не найдена
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:25)
+2026-01-29 18:49:32 ERROR Finder:34 - Error: Данный аргумент '.txt' не начинается с '-' символа
+java.lang.IllegalArgumentException: Error: Данный аргумент '.txt' не начинается с '-' символа
+	at org.example.finder.ArgsName.validate(ArgsName.java:22)
+	at org.example.finder.ArgsName.parse(ArgsName.java:44)
+	at org.example.finder.ArgsName.of(ArgsName.java:52)
+	at org.example.finder.Finder.main(Finder.java:24)
+2026-01-29 18:50:55 ERROR Finder:34 - Директория поиска: 'd:\tes2345t' не найдена
+java.lang.IllegalArgumentException: Директория поиска: 'd:\tes2345t' не найдена
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:25)
+2026-01-29 19:12:21 ERROR Finder:37 - Директория поиска: 'd:\test34' не найдена
+java.lang.IllegalArgumentException: Директория поиска: 'd:\test34' не найдена
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:28)
+2026-01-29 19:12:31 ERROR Finder:37 - Директория поиска: 'd:\test34' не найдена
+java.lang.IllegalArgumentException: Директория поиска: 'd:\test34' не найдена
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:28)
+2026-01-29 20:11:42 ERROR Finder:34 - Директория поиска: 'd:\tes2345t' не найдена
+java.lang.IllegalArgumentException: Директория поиска: 'd:\tes2345t' не найдена
+	at org.example.finder.ArgsName.get(ArgsName.java:20)
+	at org.example.finder.Finder.main(Finder.java:25)
+2026-01-29 20:12:06 INFO  Finder:25 - d d:\test,n test.txt,t name,o .\src\main\resources\log.txt
+2026-01-29 20:12:06 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 20:13:43 INFO  Finder:25 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:13:43 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 20:14:27 INFO  Finder:25 - d d:\test,n *.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:14:27 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 20:16:07 INFO  Finder:25 - d d:\test,n *.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:16:07 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 20:18:11 INFO  Finder:25 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:18:11 DEBUG Finder:45 - Параметры успешно валидированы
+2026-01-29 20:18:30 ERROR Finder:32 - Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+java.lang.IllegalArgumentException: Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+	at org.example.finder.ArgsName.validate(ArgsName.java:41)
+	at org.example.finder.ArgsName.parse(ArgsName.java:28)
+	at org.example.finder.ArgsName.of(ArgsName.java:18)
+	at org.example.finder.Finder.main(Finder.java:23)
+2026-01-29 20:18:40 ERROR Finder:32 - Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+java.lang.IllegalArgumentException: Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+	at org.example.finder.ArgsName.validate(ArgsName.java:41)
+	at org.example.finder.ArgsName.parse(ArgsName.java:28)
+	at org.example.finder.ArgsName.of(ArgsName.java:18)
+	at org.example.finder.Finder.main(Finder.java:23)
+2026-01-29 20:20:57 ERROR Finder:32 - Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+java.lang.IllegalArgumentException: Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+	at org.example.finder.ArgsName.validate(ArgsName.java:41)
+	at org.example.finder.ArgsName.parse(ArgsName.java:28)
+	at org.example.finder.ArgsName.of(ArgsName.java:18)
+	at org.example.finder.Finder.main(Finder.java:23)
+2026-01-29 20:21:33 ERROR Finder:32 - Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+java.lang.IllegalArgumentException: Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+	at org.example.finder.ArgsName.validate(ArgsName.java:41)
+	at org.example.finder.ArgsName.parse(ArgsName.java:28)
+	at org.example.finder.ArgsName.of(ArgsName.java:18)
+	at org.example.finder.Finder.main(Finder.java:23)
+2026-01-29 20:25:40 ERROR Finder:32 - Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+java.lang.IllegalArgumentException: Не правильно заданы аргументы. Вызовете программу с ключом -h для справки
+	at org.example.finder.ArgsName.validate(ArgsName.java:41)
+	at org.example.finder.ArgsName.parse(ArgsName.java:28)
+	at org.example.finder.ArgsName.of(ArgsName.java:18)
+	at org.example.finder.Finder.main(Finder.java:23)
+2026-01-29 20:25:55 ERROR Finder:32 - Заданы не все ключи. Вызовете программу с ключом -h для справки
+java.lang.IllegalArgumentException: Заданы не все ключи. Вызовете программу с ключом -h для справки
+	at org.example.finder.ArgsName.parse(ArgsName.java:33)
+	at org.example.finder.ArgsName.of(ArgsName.java:18)
+	at org.example.finder.Finder.main(Finder.java:23)
+2026-01-29 20:26:58 INFO  Finder:24 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:26:58 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:27:27 INFO  Finder:24 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:27:27 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:32:48 INFO  Finder:24 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:32:48 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:46:09 INFO  Finder:24 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:46:09 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:46:58 INFO  Finder:24 - d d:\test,n **.txt,t mask,o .\src\main\resources\log.txt
+2026-01-29 20:46:58 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:53:39 INFO  Finder:24 - d d:\test,n d:\\\\(?:[^\\\\]+\\\\)*елка\\\\самолеты\\.txt|,t regex,o .\src\main\resources\log.txt
+2026-01-29 20:53:39 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:58:04 INFO  Finder:24 - d d:\test,n d:\\\\test\\\\елка\\\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 20:58:04 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 20:58:43 INFO  Finder:24 - d d:\test,n d:\\\\test\\\\елка\\\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 20:58:43 DEBUG Finder:26 - Параметры успешно валидированы
+2026-01-29 21:04:42 INFO  Finder:24 - d d:\test,n d:\\\\test\\\\елка\\\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:04:42 DEBUG Finder:27 - Параметры успешно валидированы
+2026-01-29 21:05:11 INFO  Finder:24 - d d:\test,n d:\\\\test\\\\елка\\\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:05:11 DEBUG Finder:27 - Параметры успешно валидированы
+2026-01-29 21:07:08 INFO  Finder:24 - d d:\test,n .*d:\\\\test\\\\елка\\\\самолеты\\.txt.*,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:07:08 DEBUG Finder:27 - Параметры успешно валидированы
+2026-01-29 21:09:24 INFO  Finder:24 - d d:\test,n d:\\\\test\\\\елка\\\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:09:24 DEBUG Finder:27 - Параметры успешно валидированы
+2026-01-29 21:09:37 INFO  Finder:24 - d d:\test,n d:\\\\test\\\\елка\\\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:09:37 DEBUG Finder:27 - Параметры успешно валидированы
+2026-01-29 21:42:51 INFO  Finder:24 - d d:\test,n d:\\test\\елка\\самолеты\\.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:42:51 DEBUG Finder:27 - Параметры успешно валидированы
+2026-01-29 21:44:22 INFO  Finder:24 - d d:\test,n .+ам.+.txt,t regex,o .\src\main\resources\log.txt
+2026-01-29 21:44:22 DEBUG Finder:27 - Параметры успешно валидированы
