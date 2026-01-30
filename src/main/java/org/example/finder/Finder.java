@@ -2,16 +2,21 @@ package org.example.finder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.nio.file.*;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.PatternSyntaxException;
 
 public class Finder {
 
     private static final Logger LOG = LoggerFactory.getLogger(Finder.class);
+
 
     public static void main(String[] args) throws IOException {
         if (List.of(args).contains("-h")) {
@@ -20,6 +25,7 @@ public class Finder {
         }
         try {
             ArgsName argParams = ArgsName.of(args);
+            validate(argParams.getValues());
             LOG.info("d {},n {},t {},o {}", argParams.get("d"), argParams.get("n"), argParams.get("t"), argParams.get("o"));
             PathMatcher matcher = getPathMatcher(argParams);
             LOG.debug("Параметры успешно валидированы");
@@ -72,6 +78,28 @@ public class Finder {
         }
     }
 
+    private static void validate(Map<String,String> values){
+        if (!Set.of("d", "n", "t", "o").equals(values.keySet())) {
+            throw new IllegalArgumentException("Заданы не все ключи. Вызовете программу с ключом -h для справки");
+        }
+        validateTypeMask(values);
+        validateSource(values);
+    };
+
+    private static void validateSource(Map<String,String> values) {
+        String source = values.get("d");
+        File dir = Paths.get(source).toFile();
+        if (!dir.exists() || !dir.isDirectory()) {
+            throw new IllegalArgumentException(String.format("Директория поиска: '%s' не найдена", source));
+        }
+    }
+
+    private static void validateTypeMask(Map<String,String> values) {
+        String maskType = values.get("t");
+        if (!List.of("mask", "name", "regex").contains(maskType)) {
+            throw new IllegalArgumentException(String.format("Задано недопустимое значение %s аргумента t", maskType));
+        }
+    }
     private static void printHelp() {
         System.out.println("""
                  Программа должна искать данные в заданном каталоге и подкаталогах.
