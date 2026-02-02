@@ -39,19 +39,20 @@ public class Finder {
     }
 
     private static PathMatcher getPathMatcher(ArgsName argParams) {
+        String sample = argParams.get("n");
         try {
             String pattern = switch (argParams.get("t")) {
-                case "regex" -> String.format("regex:%s", argParams.get("n"));
-                case "name" -> String.format("glob:**%s", argParams.get("n"));
-                case "mask" -> String.format("glob:%s", argParams.get("n"));
+                case "regex" -> String.format("regex:%s", sample);
+                case "name" -> String.format("glob:**%s", sample);
+                case "mask" -> String.format("glob:%s", sample);
                 default -> "";
             };
             return FileSystems.getDefault().getPathMatcher(pattern);
         } catch (UnsupportedOperationException | PatternSyntaxException e) {
-            LOG.error("Выражение {} не является регулярным выражением или маской для файла", argParams.get("n"));
+            LOG.error("Выражение {} не является регулярным выражением или маской для файла", sample);
             LOG.error(e.getMessage(), e);
             throw new IllegalArgumentException(("Аргумент n указан не верно. " +
-                    "Выражение %s не является регулярным выражением или маской для файла").formatted(argParams.get("n")));
+                    "Выражение %s не является регулярным выражением или маской для файла").formatted(sample));
         }
     }
 
@@ -84,7 +85,7 @@ public class Finder {
         }
         validateTypeMask(values);
         validateSource(values);
-    };
+    }
 
     private static void validateSource(Map<String,String> values) {
         String source = values.get("d");
